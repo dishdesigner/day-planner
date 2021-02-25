@@ -1,0 +1,105 @@
+/*********** FONTS ***********/
+
+
+/*********** VARIABLES ***********/
+:root {
+  --variable1: ;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.title {
+
+}
+
+.subtitle {
+
+}
+
+.dayTime {
+
+}
+
+.scheduleGrid {
+  margin: 20px 0px;
+}
+
+/* .description {
+  white-space: pre-wrap;
+} */
+
+/* .time-block {
+  text-align: center;
+  border-radius: 15px;
+} */
+
+.row {
+  margin: auto;
+  padding: 0;
+  /* background: lightgreen; */
+  /* white-space: pre-wrap; */
+  /* height: 20px; */
+}
+
+.hour {
+  text-align: left;
+  padding: .4em 0 1.4em 0;
+  /* background-color: #8d4040; */
+  color: #ffffff;
+  border-top: 1px solid #06AED5;
+}
+
+textarea {
+  min-width: 100%;
+  padding: .4em 0;
+  line-height: 1.4em;
+  margin-bottom: .4em;
+  background: transparent;
+  border-top: 1px solid #06AED5;;
+  resize: none;
+  color: #ffffff;
+}
+
+textarea:focus {
+  outline: 3px solid #155361;
+  background-color: #06AED5;
+}
+
+.event {
+
+}
+
+.save {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid white;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #06AED5;
+  color: white;
+}
+
+.save:hover {
+  background-color: #155361;
+  transition: all .3s ease-in-out;
+}
+
+.past {
+  background-color: #d3d3d3;
+  color: white;
+}
+
+.present {
+  background-color: #ff6961;
+  color: white;
+}
+
+.future {
+  background-color: #77dd77;
+  color: white;
+}
