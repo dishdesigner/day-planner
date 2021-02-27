@@ -1,9 +1,13 @@
+
 // Display current day/time, updated each second
-let currentDay = $('#currentDay');
+let currentDayTime = setInterval(function(){
+    let currentDay = document.querySelector('#currentDay');
+    let currentTime = document.querySelector('#currentTime');
+    let event = document.querySelector('textarea');
 
-setInterval(function() {
-    currentDay.text(moment().format(YYYY-MM-DD hh:mm:ss));
+    currentDay.innerHTML = moment().format('dddd MMMM Do YYYY');
+    currentTime.innerHTML = moment().format('h:mm:ss');
+
+
 }, 1000);
-
-
 
