@@ -12,80 +12,85 @@
 </head>
 
 <body class="bg-secondary">
-  <header class="py-3 bg-dark text-light text-center">
-    <h1 class="title display-6">Work Day Scheduler</h1>
-    <p class="subtitle">A simple calendar app for scheduling your work day</p>
-    <p id="currentDayTime" class="dayTime"></p>
+  <header class="row py-1 bg-dark text-light justify-content-center align-items-center">
+    <div class="col-lg-5">
+      <h1 class="title display-6 text-center text-lg-start">Todo Today</h1>
+      <p class="subtitle text-center text-lg-start">(1) Enter appointment (2) Click save</p>
+    </div>
+    <div class="col-lg-5">
+      <p id="currentDay" class="currentDay text-center text-lg-end">THU 02/26/2021</p>
+      <p id="currentTime" class="currentTime text-center text-lg-end">10:45:02 PM</p>
+    </div>
   </header>
 
   <div class="scheduleGrid align-items-center">
     <div class="row col-10">
-      <div class="hour col-1">9am</div>
+      <div class="hour col-1">09</div>
       <div class="event col-10">
-        <textarea id="event-9am" name="event-9am"></textarea>
+        <textarea id="event-9am" name="event-9am" data-hour="9am"></textarea>
       </div>
       <div class="save col-1">
         <img src="assets/images/SaveButton-Disk.svg">
       </div>
     </div>
     <div class="row col-10">
-      <div class="hour col-1">10am</div>
+      <div class="hour col-1">10</div>
       <div class="event col-10">
-        <textarea id="event-10am" name="event-10am"></textarea>
+        <textarea id="event-10am" name="event-10am" data-hour="10am"></textarea>
       </div>
       <div class="save col-1">
         <img src="assets/images/SaveButton-Disk.svg">
       </div>
     </div>
     <div class="row col-10">
-      <div class="hour col-1">11am</div>
+      <div class="hour col-1">11</div>
       <div class="event col-10">
-        <textarea id="event-11am" name="event-11am"></textarea>
+        <textarea id="event-11am" name="event-11am" data-hour="11am"></textarea>
       </div>
       <div class="save col-1">
         <img src="assets/images/SaveButton-Disk.svg">
       </div>
     </div>
     <div class="row col-10">
-      <div class="hour col-1">12pm</div>
+      <div class="hour col-1">12</div>
       <div class="event col-10">
-        <textarea id="event-12pm" name="event-12pm"></textarea>
+        <textarea id="event-12pm" name="event-12pm" data-hour="12pm"></textarea>
       </div>
       <div class="save col-1">
         <img src="assets/images/SaveButton-Disk.svg">
       </div>
     </div>
     <div class="row col-10">
-      <div class="hour col-1">1pm</div>
+      <div class="hour col-1">01</div>
       <div class="event col-10">
-        <textarea id="event-1pm" name="event-1pm"></textarea>
+        <textarea id="event-1pm" name="event-1pm" data-hour="1pm"></textarea>
       </div>
       <div class="save col-1">
         <img src="assets/images/SaveButton-Disk.svg">
       </div>
     </div>
     <div class="row col-10">
-      <div class="hour col-1">2pm</div>
+      <div class="hour col-1">02</div>
       <div class="event col-10">
-        <textarea id="event-2pm" name="event-2pm"></textarea>
+        <textarea id="event-2pm" name="event-2pm" data-hour="2pm"></textarea>
       </div>
       <div class="save col-1">
         <img src="assets/images/SaveButton-Disk.svg">
       </div>
     </div>
     <div class="row col-10">
-      <div class="hour col-1">3pm</div>
+      <div class="hour col-1">03</div>
       <div class="event col-10">
-        <textarea id="event-3pm" name="event-3pm"></textarea>
+        <textarea id="event-3pm" name="event-3pm" data-hour="3pm"></textarea>
       </div>
       <div class="save col-1">
         <img src="assets/images/SaveButton-Disk.svg">
       </div>
     </div>
     <div class="row col-10">
-      <div class="hour col-1">4pm</div>
+      <div class="hour col-1">04</div>
       <div class="event col-10">
-        <textarea id="event-4pm" name="event-4pm"></textarea>
+        <textarea id="event-4pm" name="event-4pm" data-hour="4pm"></textarea>
       </div>
       <div class="save col-1">
         <img src="assets/images/SaveButton-Disk.svg">

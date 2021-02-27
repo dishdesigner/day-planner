@@ -1,14 +1,19 @@
 /*********** FONTS ***********/
+/*  'IBM Plex Mono', monospace  */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap');
 
+/*  'Black Ops One', monospace  */
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
 
 /*********** VARIABLES ***********/
 :root {
-  --variable1: ;
+  --IBMsans: 'IBM Plex Sans', sans-serif;
+  --Stencil: 'Black Ops One', monospace;
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
+  font-family: var(--IBMsans);
+  font-size: 18px;
   line-height: 1;
 }
 
@@ -20,12 +25,18 @@ body {
 
 }
 
-.dayTime {
+.title, .subtitle, .currentTime, .currentDay {
+  text-align: center;
+}
 
+.currentTime {
+  font-family: var(--Stencil);
+  font-size: 2.5em;
+  line-height: 0.4em;
 }
 
 .scheduleGrid {
-  margin: 20px 0px;
+  margin: 3em 0;
 }
 
 /* .description {
@@ -46,6 +57,8 @@ body {
 }
 
 .hour {
+  font-family: monospace;
+  font-size: 1.5em;
   text-align: left;
   padding: .4em 0 1.4em 0;
   /* background-color: #8d4040; */
@@ -55,9 +68,12 @@ body {
 
 textarea {
   min-width: 100%;
-  padding: .4em 0;
+  min-height: 100%;
+  /* padding: .4em 0; */
+  font-family: var(--IBMsans);
+  /* font-size: 1.2em; */
   line-height: 1.4em;
-  margin-bottom: .4em;
+  /* margin-bottom: .4em; */
   background: transparent;
   border-top: 1px solid #06AED5;;
   resize: none;
@@ -74,18 +90,23 @@ textarea:focus {
 }
 
 .save {
+  font-family: monospace;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
   border-top: 1px solid white;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #06AED5;
+  /* background-color: #06AED5; */
   color: white;
 }
 
 .save:hover {
-  background-color: #155361;
+  /* background-color: #155361; */
+  background-color: #06AED5;
   transition: all .3s ease-in-out;
 }
 
