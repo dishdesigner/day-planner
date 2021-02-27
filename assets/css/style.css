@@ -10,10 +10,12 @@
   --IBMsans: 'IBM Plex Sans', sans-serif;
   --Stencil: 'Black Ops One', monospace;
   --White: #ffffff;
+  --Highlight: rgba(255, 217, 0, 0.3);
   --LightBlue: #06AED5;
-  --LightBlue-10: rgba(6, 175, 213, 0.2);
+  --LightBlue-20: rgba(6, 175, 213, 0.2);
   --DarkBlue: #155361;
   --DarkGray: #333333;
+  --DarkGray-20: rgba(51, 51, 51, 0.2);
   --Black: #000000;
 }
 
@@ -90,15 +92,15 @@ textarea:focus {
 }
 
 .past {
-  background-color: var(--);
+  background-color: var(--DarkGray-20);
 }
 
 .present {
-  background-color: var(--);
+  background-color: var(--Highlight);
 }
 
 .future {
-  background-color: var(--);
+  background-color: var(--LightBlue-20);
 }
 
 .save {
@@ -106,7 +108,7 @@ textarea:focus {
   align-items: center;
   min-width: 2em;
   justify-content: center;
-  background-color: var(--LightBlue-10);
+  background-color: var(--LightBlue-20);
   border-top: 1px solid var(--LightBlue);
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
