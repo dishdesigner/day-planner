@@ -120,3 +120,7 @@ textarea:focus {
   transition: all .2s ease-in-out;
 }
 
+.stored {
+  background-color: var(--LightBlue);
+}
+
