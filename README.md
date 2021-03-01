@@ -21,7 +21,7 @@
 
 The UI requires little orientation since features are so limited. 2-step instructions are included beneath the header title and say it all: (1) Enter appointments (2) Click save.
 
-![Day planner app screenshot](assets/images/Day-Planner-Screenshot.png)
+![Day planner app screenshot](assets/images/Day-Planner-FinalScreenshot.png)
 
 ---
 
