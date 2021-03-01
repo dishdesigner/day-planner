@@ -8,6 +8,9 @@
 
 * This is a simple text-only daily business appointment app that records user inputs at each hour of the day between 9:00 am and 5:00 pm.
 * When a user enters an appointment and clicks Save on that hour row, the entry is written to the local storage cache of the browser so that it can maintain state after browser refreshes.
+* The save button tabs darken when that hour's appointment is saved in local storage.
+* If a user deletes an appointment entry then clicks save, that entry is deleted from local storage and darkened save button state is removed.
+* Darkened save button state is also restored after page refresh for any stored appointment entry.
 * The calendar grid is also time-aware and changes its color scheme to indicate the current status of the day's appointments as either in the past, present, or future.
 * The UI is stark and clean, monochrome with blue accents, and great care was taken to ensure that it is completely responsive to all devices and orientations!
 * This app is built with HTML, CSS, pure Javascript, MomentJS, and the Bootstrap CSS framework for compatibility across all major browsers.
