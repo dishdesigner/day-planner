@@ -26,12 +26,11 @@ Write appointments into local storage when Save is clicked and change state of b
 *******************************************/
 document.addEventListener('click', (event) => {
     let hour2save = event.target.dataset.hour;
-    let appt2save = $('textarea[data-hour = "'+hour2save+'"]').val(); // OMG, this took a DAY to figure out!
+    let appt2save = $('textarea[data-hour = "'+hour2save+'"]').val();
 
     if (event.target.classList.contains('save')) {
-        console.log(`Hour = ${hour2save}, Appt = ${appt2save}`); // TESTING
-        if (appt2save === "") {
-            localStorage.removeItem(hour2save); // delete any empties
+        if (appt2save === "") { // delete any empties
+            localStorage.removeItem(hour2save);
             event.target.classList.remove('stored');
         } else {
             localStorage.setItem(hour2save, appt2save);
@@ -47,15 +46,11 @@ window.addEventListener('load', (event) => {
     appointmentInputs.forEach(appointment => {
         let hour2read = appointment.dataset.hour;
         let storedAppt = localStorage.getItem(hour2read);
-
-        // let storedApptButton = $('div.save[data-hour = "'+hour2read+'"]');
-        let storedApptButton = $('.save[data-hour = "'+hour2read+'"]');
-
-        console.log(storedApptButton.classList);
+        let storedApptButton = appointment.parentElement.nextSibling.nextSibling;
 
         if (storedAppt !== null) { // if storage exists, restore
             appointment.value = storedAppt;
-            // storedApptButton.classList.add('stored');
+            storedApptButton.classList.add('stored');
         }
     })
 })
