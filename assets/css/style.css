@@ -53,7 +53,7 @@ body {
   text-transform: uppercase;
 }
 
-.labelEvent {
+.labelAppt {
   padding-left: 15px;
 }
 
@@ -87,10 +87,6 @@ textarea:focus {
   background-color: var(--LightBlue);
 }
 
-.event {
-
-}
-
 .past {
   background-color: var(--DarkGray-20);
 }
@@ -108,19 +104,19 @@ textarea:focus {
   align-items: center;
   min-width: 2em;
   justify-content: center;
-  background-color: var(--LightBlue-20);
+  background-color: var(--DarkGray-20);
   border-top: 1px solid var(--LightBlue);
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  color: var(--White);
-}
-
-.save:hover {
-  background-color: var(--LightBlue);
-  transition: all .2s ease-in-out;
 }
 
 .stored {
   background-color: var(--LightBlue);
 }
+
+.save:hover .stored:hover {
+  background-color: var(--LightBlue);
+  transition: all .2s ease-in-out;
+}
+
 
